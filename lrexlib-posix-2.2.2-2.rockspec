@@ -1,10 +1,10 @@
 -- This file was automatically generated for the LuaDist project.
 
 package="lrexlib-posix"
-version="2.2.2-1"
+version="2.2.2-2"
 -- LuaDist source
 source = {
-  tag = "2.2.2-1",
+  tag = "2.2.2-2",
   url = "git://github.com/LuaDist-testing/lrexlib-posix.git"
 }
 -- Original source
@@ -32,7 +32,8 @@ build = {
    variables = {
       INC = "-I$(LUA_INCDIR)",
       LD = "$(LD)",
-      LDFLAGS = "$(LIBFLAG)"
+      LDFLAGS = "$(LIBFLAG)",
+      MYCFLAGS = "-W -Wall $(CFLAGS)"
    },
    install = {
       lib = {
