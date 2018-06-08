@@ -1,16 +1,15 @@
 -- This file was automatically generated for the LuaDist project.
 
 package="lrexlib-posix"
-version="2.3.0-1"
+version="2.4.0-1"
 -- LuaDist source
 source = {
-  tag = "2.3.0-1",
+  tag = "2.4.0-1",
   url = "git://github.com/LuaDist-testing/lrexlib-posix.git"
 }
 -- Original source
 -- source = {
---    url = "http://luaforge.net/frs/download.php/3439/lrexlib-2.3.0.zip",
---    md5 = "795c33965fb6eb0a981aa419028e3ef0"
+--    url = "http://luaforge.net/frs/download.php/3599/lrexlib-2.4.0.zip"
 -- }
 description = {
    summary = "Lua binding of the POSIX regular expression library.",
@@ -28,6 +27,6 @@ dependencies = {
 build = {
    type = "module",
    modules = {
-      rex_posix = {"src/common.c", "src/lposix.c"}
+      rex_posix = {"src/common.c", "src/posix/lposix.c"}
    }
 }
